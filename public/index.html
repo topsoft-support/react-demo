@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <!--<base id="base" href="<%= htmlWebpackPlugin.options.base %>" base="<%= htmlWebpackPlugin.options.base %>" server="<%= htmlWebpackPlugin.options.server %>"/>-->
+    <script>
+        window.base = "<%= htmlWebpackPlugin.options.base %>";
+        window.server = "<%= htmlWebpackPlugin.options.server %>";
+    </script>
+
+    <script src="<%= htmlWebpackPlugin.options.base %>js/config.js"></script>
+</head>
+<body>
+<div id="root"></div>
+</body>
+</html>
